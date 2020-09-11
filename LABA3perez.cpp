@@ -65,11 +65,11 @@ double New1(double* z, double x) {
 	for (int i = 1; i < n; i++) {
 
 		q *= ((x - x0) / h - i) / (i + 1);
-		//cout«q«" * "«d[i]«" = "«q*d[i]«endl;
+		
 		sum += q * d[i];
 
 	}
-	//cout«sum«" итоговая сумма";
+
 	return sum;
 }
 double New2(double* z, double x) {
@@ -82,11 +82,9 @@ double New2(double* z, double x) {
 	for (int i = 1; i < n; i++) {
 
 		q *= ((x - x0) / h + i) / (i + 1);
-		//cout«q«" * "«d[i]«" = "«q*d[i]«endl;
 		sum += q * d[i];
 
 	}
-	//cout«sum«" итоговая сумма";
 	return sum;
 }
 
